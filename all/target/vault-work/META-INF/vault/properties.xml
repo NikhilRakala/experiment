@@ -3,7 +3,7 @@
 <properties>
 <comment>Indusind Sites Project - All</comment>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2024-07-01T07:17:54.850Z</entry>
+<entry key="created">2024-07-04T06:00:56.814Z</entry>
 <entry key="groupId">com.adobe.aem.indusind</entry>
 <entry key="name">aem-indusind-platform.all</entry>
 <entry key="description">All content package for Indusind Sites Project</entry>

@@ -10,11 +10,11 @@ Export-Package: com.indusind.aem.platform.core.filters;version="1.0";u
  ="1.0";uses:="javax.jcr.observation,org.apache.sling.api.resource,org
  .apache.sling.api.resource.observation,org.osgi.service.event",com.in
  dusind.aem.platform.core.models;version="1.0";uses:="javax.annotation
- ,org.apache.sling.api.resource,org.apache.sling.models.annotations,or
- g.apache.sling.models.annotations.injectorspecific",com.indusind.aem.
- platform.core.schedulers;version="1.0",com.indusind.aem.platform.core
- .servlets;version="1.0";uses:="javax.servlet,org.apache.sling.api,org
- .apache.sling.api.servlets"
+ ,org.apache.sling.api,org.apache.sling.api.resource,org.apache.sling.
+ models.annotations,org.apache.sling.models.annotations.injectorspecif
+ ic",com.indusind.aem.platform.core.schedulers;version="1.0",com.indus
+ ind.aem.platform.core.servlets;version="1.0";uses:="javax.servlet,org
+ .apache.sling.api,org.apache.sling.api.servlets"
 Import-Package: javax.annotation;version="0.0.0",com.adobe.granite.wor
  kflow;version="[1.1,2)",com.adobe.granite.workflow.exec;version="[1.2
  ,2)",com.adobe.granite.workflow.metadata;version="[1.0,2)",com.adobe.
@@ -26,22 +26,25 @@ Import-Package: javax.annotation;version="0.0.0",com.adobe.granite.wor
  ind.aem.platform.core.listeners;version="[1.0,2)",com.indusind.aem.pl
  atform.core.schedulers;version="[1.0,2)",com.mysql.cj.jdbc,javax.jcr;
  version="[2.0,3)",javax.jcr.observation;version="[2.0,3)",javax.servl
- et;version="[3.1,4)",org.apache.poi.ss.usermodel;version="[3.0,4)",or
- g.apache.poi.xssf.usermodel;version="[3.0,4)",org.apache.sling.api;ve
- rsion="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.ap
- ache.sling.api.resource;version="[2.12,3)",org.apache.sling.api.resou
- rce.observation;version="[1.2,2)",org.apache.sling.api.servlets;versi
- on="[2.3,3)",org.apache.sling.commons.scheduler;version="[2.5,3)",org
- .apache.sling.event.jobs;version="[2.0,3)",org.apache.sling.event.job
- s.consumer;version="[1.2,2)",org.apache.sling.jcr.api;version="[2.4,3
- )",org.apache.sling.models.annotations;version="[1.5,2)",org.apache.s
- ling.models.annotations.injectorspecific;version="[1.1,2)",org.apache
- .sling.settings;version="[1.3,2)",org.osgi.service.component;version=
- "[1.4,2)",org.osgi.service.event;version="[1.3,2)",org.slf4j;version=
- "[1.7,2)"
-Private-Package: com.indusind.aem.platform.core.jobs,com.indusind.aem.
- platform.core.services,com.indusind.aem.platform.core.services.impl,c
- om.indusind.aem.platform.core.workflow
+ et;version="[3.1,4)",org.apache.commons.lang3;version="[3.12,4)",org.
+ apache.poi.ss.usermodel;version="[3.0,4)",org.apache.poi.xssf.usermod
+ el;version="[3.0,4)",org.apache.sling.api;version="[2.3,3)",org.apach
+ e.sling.api.request;version="[2.4,3)",org.apache.sling.api.resource;v
+ ersion="[2.12,3)",org.apache.sling.api.resource.observation;version="
+ [1.2,2)",org.apache.sling.api.servlets;version="[2.3,3)",org.apache.s
+ ling.caconfig;version="[1.0,2)",org.apache.sling.caconfig.annotation;
+ version="[1.1,2)",org.apache.sling.commons.scheduler;version="[2.5,3)
+ ",org.apache.sling.event.jobs;version="[2.0,3)",org.apache.sling.even
+ t.jobs.consumer;version="[1.2,2)",org.apache.sling.jcr.api;version="[
+ 2.4,3)",org.apache.sling.models.annotations;version="[1.5,2)",org.apa
+ che.sling.models.annotations.injectorspecific;version="[1.1,2)",org.a
+ pache.sling.settings;version="[1.3,2)",org.osgi.service.component;ver
+ sion="[1.4,2)",org.osgi.service.event;version="[1.3,2)",org.slf4j;ver
+ sion="[1.7,2)"
+Private-Package: com.indusind.aem.platform.core.config,com.indusind.ae
+ m.platform.core.jobs,com.indusind.aem.platform.core.services,com.indu
+ sind.aem.platform.core.services.impl,com.indusind.aem.platform.core.w
+ orkflow
 Provide-Capability: osgi.service;objectClass:List<String>="com.adobe.g
  ranite.workflow.exec.WorkflowProcess";uses:="com.adobe.granite.workfl
  ow.exec",osgi.service;objectClass:List<String>="com.indusind.aem.plat
@@ -103,6 +106,7 @@ Service-Component: OSGI-INF/com.indusind.aem.platform.core.filters.Log
 Sling-Model-Classes: com.indusind.aem.platform.core.models.AashishServ
  iceToModel,com.indusind.aem.platform.core.models.AppModel,com.indusin
  d.aem.platform.core.models.AuthorImpl,com.indusind.aem.platform.core.
- models.HelloWorldModel,com.indusind.aem.platform.core.models.MegaMenu
- Model
+ models.CAConfigImpl,com.indusind.aem.platform.core.models.HelloWorldM
+ odel,com.indusind.aem.platform.core.models.MegaMenuModel,com.indusind
+ .aem.platform.core.models.MyModel
 
